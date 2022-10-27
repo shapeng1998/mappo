@@ -8,12 +8,11 @@
 import gym
 from gym import spaces
 import numpy as np
-from envs.env_core import EnvCore
-
+from mpe import make_env
 
 class DiscreteActionEnv(object):
     def __init__(self):
-        self.env = EnvCore()
+        self.env = make_env("simple_spread")
         self.num_agent = self.env.agent_num
 
         self.signal_obs_dim = self.env.obs_dim
