@@ -8,7 +8,8 @@
 import gym
 from gym import spaces
 import numpy as np
-from mpe import make_env
+from mpe.make_env import make_env
+
 
 class DiscreteActionEnv(object):
     def __init__(self):
