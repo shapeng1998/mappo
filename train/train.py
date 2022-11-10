@@ -114,6 +114,7 @@ def main(args):
     if not run_dir.exists():
         os.makedirs(str(run_dir))
 
+    # set process title when using htop
     setproctitle.setproctitle(
         str(all_args.algorithm_name)
         + "-"
