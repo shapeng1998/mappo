@@ -147,7 +147,6 @@ class EnvRunner(Runner):
 
     def insert(self, data):
         obs, rewards, dones, infos, values, actions, action_log_probs, rnn_states, rnn_states_critic = data
-        print(rewards)
 
         rnn_states[dones == True] = np.zeros(
             ((dones == True).sum(), self.recurrent_N, self.hidden_size), dtype=np.float32

@@ -92,7 +92,7 @@ def main(args):
 
     # run dir
     run_dir = (
-        Path(os.path.split(os.path.dirname(os.path.abspath(__file__)))[0] + "/results")
+        Path(os.getcwd() + "/results")
         / all_args.env_name
         / all_args.scenario_name
         / all_args.algorithm_name
