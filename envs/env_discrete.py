@@ -75,7 +75,7 @@ class DiscreteActionEnv(object):
         pass
 
     def render(self, mode="rgb_array"):
-        pass
+        self.env.render(mode=mode)
 
     def seed(self, seed):
         pass
