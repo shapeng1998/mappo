@@ -6,8 +6,9 @@
 """
 
 import gym
-from gym import spaces
 import numpy as np
+from gym import spaces
+
 from mpe.make_env import make_env
 
 

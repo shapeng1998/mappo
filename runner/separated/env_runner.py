@@ -5,16 +5,17 @@
 # @File    : env_runner.py
 """
 
-import time
-import wandb
 import os
-import numpy as np
+import time
 from itertools import chain
-import torch
 
-from utils.util import update_linear_schedule
-from runner.separated.base_runner import Runner
 import imageio
+import numpy as np
+import torch
+import wandb
+
+from runner.separated.base_runner import Runner
+from utils.util import update_linear_schedule
 
 
 def _t2n(x):

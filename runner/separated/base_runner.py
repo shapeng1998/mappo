@@ -1,9 +1,10 @@
-import time
-import wandb
 import os
-import numpy as np
+import time
 from itertools import chain
+
+import numpy as np
 import torch
+import wandb
 from tensorboardX import SummaryWriter
 
 from utils.separated_buffer import SeparatedReplayBuffer

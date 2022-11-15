@@ -6,15 +6,16 @@
 """
 
 # !/usr/bin/env python
-import sys
 import os
-import socket
-import setproctitle
-import numpy as np
+import sys
 from pathlib import Path
+
+import numpy as np
+import setproctitle
 import torch
+
 from config import get_config
-from envs.env_wrappers import SubprocVecEnv, DummyVecEnv
+from envs.env_wrappers import DummyVecEnv, SubprocVecEnv
 
 """Train script for MPEs."""
 

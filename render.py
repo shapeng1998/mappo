@@ -1,9 +1,11 @@
 import os
-from pathlib import Path
 import sys
+from pathlib import Path
+
 import numpy as np
 import setproctitle
 import torch
+
 from config import get_config
 from envs.env_wrappers import DummyVecEnv, SubprocVecEnv
 

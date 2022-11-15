@@ -6,10 +6,11 @@
 Modified from OpenAI Baselines code to work with multi-agent envs
 """
 
+from abc import ABC, abstractmethod
+from multiprocessing import Pipe, Process
+
 import numpy as np
 import torch
-from multiprocessing import Process, Pipe
-from abc import ABC, abstractmethod
 
 
 def tile_images(img_nhwc):
