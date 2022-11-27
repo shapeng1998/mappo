@@ -13,10 +13,12 @@
 """
 
 import time
+
+import imageio
 import numpy as np
 import torch
+
 from runner.shared.base_runner import Runner
-import imageio
 
 
 def _t2n(x):

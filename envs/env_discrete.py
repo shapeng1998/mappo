@@ -11,11 +11,14 @@ from gym import spaces
 
 from mpe.make_env import make_env
 
+from .MyMultiAgentAviary import MyMultiAgentAviary
+
 
 class DiscreteActionEnv(object):
     def __init__(self):
         # debug: hardcode the mpe environment
-        self.env = make_env("simple_spread")
+        self.env = MyMultiAgentAviary()
+        # self.env = make_env("simple_spread")
         self.num_agent = self.env.agent_num
 
         self.signal_obs_dim = self.env.obs_dim
